@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #000;
+}
+
+i {
+  text-align: center;
+  width: 35px;
+  vertical-align: middle;
+}
+
+i.fa-2x {
+  font-size: 1.5em;
+}
+
+#drawing-board {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #000;
+}
+
+#drawing-board nav {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 50px;
+}
+
+#drawing-board nav div,
+#drawing-board nav a {
+  cursor: pointer;
+  margin: 18px 0;
+}
+
+#drawing-board nav div span,
+#drawing-board nav a span {
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+  position: absolute;
+  left: -65px;
+  z-index: 1;
+  color: #fff;
+  opacity: 0;
+}
+
+#drawing-board nav div i:hover + span,
+#drawing-board nav a i:hover + span {
+  opacity: 1;
+}
+
+#drawing-board .tool {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+#drawing-board .tool > div {
+  text-align: center;
+}
+
+#drawing-board .tool > div div {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#drawing-board .tool > div div i {
+  color: #b8b8b8;
+  vertical-align: baseline;
+}
+
+#drawing-board .tool > div div i.active {
+  color: #000;
+  font-size: 1.5em;
+}
+
+#drawing-board .tool > div .status div i {
+  cursor: pointer;
+}
+
+#drawing-board .tool > div .status div span {
+  display: none;
+}
+
+#drawing-board .tool > div .size {
+  vertical-align: middle;
+}
+
+#drawing-board .tool > div .size input {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0;
+  background-color: #eee;
+  margin: 0 4px;
+}
+
+#drawing-board .tool > div .set-color {
+  margin: 0 32px;
+}
+
+#drawing-board .tool > div .set-color div {
+  width: 30px;
+  height: 30px;
+  border-radius: 4em;
+  margin: 0 4px;
+}
+
+#drawing-board .tool > div .set-color div.primary {
+  border: 1px solid #ddd;
+}
+
+#drawing-board .tool > div .set-color div.active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 1px solid black;
+}
+
+#drawing-board .tool > div .set-color input {
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Drawer</title>
+  </head>
+  <body>
+    <div id="drawing-board">
+      <div class="board">
+        <canvas class="draw-canvas" width="1430" height="750"></canvas>
+      </div>
+      <nav>
+        <a href="#" class="save" download="drawImage">
+          <i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i
+          ><span>SAVE</span></a
+        >
+        <div class="clear">
+          <i class="fa fa-square-o fa-2x" aria-hidden="true"></i
+          ><span>CLEAR</span>
+        </div>
+        <div class="undo">
+          <i class="fa fa-undo fa-2x" aria-hidden="true"></i><span>UNDO</span>
+        </div>
+        <div class="redo">
+          <i class="fa fa-repeat fa-2x" aria-hidden="true"></i><span>REDO</span>
+        </div>
+      </nav>
+      <div class="tool">
+        <div>
+          <div class="status">
+            <div>
+              <i class="fa fa-paint-brush active type" aria-hidden="true"> </i
+              ><span>BRUSH</span>
+            </div>
+            <div>
+              <i class="fa fa-eraser type" aria-hidden="true"></i
+              ><span>ERASE</span>
+            </div>
+          </div>
+          <div class="set-color">
+            <input type="color" value="#FFFFFF" />
+            <div class="primary active"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+          </div>
+          <div class="size">SIZE<input type="text" value="10" />PX</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
