@@ -81,6 +81,7 @@ i.fa-2x {
   -webkit-box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
           box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
   font-weight: bold;
+  width: 60%;
 }
 
 #drawing-board .tool > div {

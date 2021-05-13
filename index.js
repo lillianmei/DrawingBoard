@@ -185,6 +185,13 @@ function changeSize(e){
   lineWidth = e.target.value
 }
 
+function boardResize(){
+  canWidth =  window.innerWidth
+  canHeight =  window.innerHeight
+  draw.width =  window.innerWidth
+  draw.height =  window.innerHeight
+}
+
 //rgb轉hex
 function rgbToHex(color,alpha){
   let rgb = color.indexOf(",") > -1 ? "," : " ";
@@ -240,5 +247,6 @@ redo.addEventListener('click',redoPath)
 selectColor.addEventListener('change',pickColor)
 brushSize.addEventListener('change',changeSize)
 window.addEventListener('load', initColor)
+window.addEventListener('resize', boardResize)
 
 
